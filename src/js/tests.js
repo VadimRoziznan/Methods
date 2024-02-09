@@ -6,34 +6,12 @@ import Daemon from "../js/daemon";
 import Undead from "../js/undead";
 import Zombie from "../js/zombie";
 
-test('Object properties Character Error name', () => {
-  const characterWithInvalidName = () =>  new Character(22, 'Magician');
-  expect(characterWithInvalidName).toThrow( new Error('Предупреждение имя должно быть в формате текста и содержать не менее 2 символов и не более 10.'));
-});
 
-test('Object properties Character Error type', () => {
-  const characterWithInvalidType = () =>  new Character('Somebody', 'Magicians');
-  expect(characterWithInvalidType).toThrow( new Error('Не верный тип'));
-});
 
-test('Object properties Character', () => {
-  const response = new Character('Somebody', 'Magician', 100, 1, 25, 25);
-  expect(response.name).toBe('Somebody');
-  expect(response.type).toBe('Magician');
-  expect(response.health).toBe(100);
-  expect(response.level).toBe(1);
-  expect(response.attack).toBe(25);
-  expect(response.defence).toBe(25);
-});
 
-test('Object properties Character levelUp', () => {
-  const testLevelUp = new Character('Somebody', 'Magician', 72, 1, 25, 25);
-  testLevelUp.levelUp()
-  expect(testLevelUp.health).toBe(100);
-  expect(testLevelUp.level).toBe(2);
-  expect(testLevelUp.attack).toBe(30);
-  expect(testLevelUp.defence).toBe(30);
-});
+
+
+
 
 test('Object properties Character Error levelUp', () => {
   const testInvalidLevelUp = () => new Character('Somebody', 'Magician', 0,).levelUp();

@@ -1,11 +1,11 @@
 export default class Character {
-  constructor(name, type, health = 100, level = 1, attack, defence) {
+  constructor(name, type) {
     this.name = this.isNameValid(name);
     this.type = this.isTypeValid(type);
-    this.health = health;
-    this.level = level;
-    this.attack = attack;
-    this.defence = defence;
+    this.health = 100;
+    this.level = 1;
+    this.attack = undefined;
+    this.defence = undefined;
   }
 
   isNameValid(name) {

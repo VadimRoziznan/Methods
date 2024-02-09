@@ -1,9 +1,9 @@
-import Bowerman from "./bowerman";
-import Daemon from "./daemon";
-import Magician from "./magician";
-import Swordsman from "./swordsman";
-import Undead from "./undead";
-import Zombie from "./zombie";
+import Bowerman from "./class/bowerman";
+import Daemon from "./class/daemon";
+import Magician from "./class/magician";
+import Swordsman from "./class/swordsman";
+import Undead from "./class/undead";
+import Zombie from "./class/zombie";
 
 
 
