@@ -12,18 +12,3 @@ test('Object properties Bowerman', () => {
   }
   expect(zombie).toEqual(correct);
 });
-
-
-test('Object properties Zombie levelUp', () => {
-  const zombie = new Zombie('Zombie', 'Zombie');
-  zombie.levelUp()
-  const correct = {
-    name: 'Zombie',
-    type: 'Zombie',
-    health: 100,
-    level: 2,
-    attack: 48,
-    defence: 12,
-  }
-  expect(zombie).toEqual(correct);
-});

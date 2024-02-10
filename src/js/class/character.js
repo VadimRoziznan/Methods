@@ -4,15 +4,15 @@ export default class Character {
     this.type = this.isTypeValid(type);
     this.health = 100;
     this.level = 1;
-    this.attack = undefined;
-    this.defence = undefined;
+    this.attack = null;
+    this.defence = null;
   }
 
   isNameValid(name) {
     if (typeof name === 'string' && name.length >= 2 && name.length <= 10) {
-      return name
+      return name;
     } else {
-      throw new Error('Предупреждение имя должно быть в формате текста и содержать не менее 2 символов и не более 10.')
+      throw new Error('Предупреждение имя должно быть в формате текста и содержать не менее 2 символов и не более 10.');
     }
   }
 
